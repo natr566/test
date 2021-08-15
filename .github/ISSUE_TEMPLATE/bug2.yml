@@ -1,8 +1,16 @@
 name: 🐞 Bug
 description: File a bug/issue
 title: "[BUG] <title>"
-labels: [Bug, Needs Triage]
+labels: [Needs Checking]
+assignees:
+  - natr566
 body:
+- type: markdown
+  value: "## Welcome!"
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out this bug! If you need real-time help, join us on Discord.
 - type: checkboxes
   attributes:
     label: Is there an existing issue for this?
@@ -12,40 +20,27 @@ body:
       required: true
 - type: textarea
   attributes:
-    label: Current Behavior
+    label: Explain your Bug / Issue
     description: A concise description of what you're experiencing.
   validations:
     required: false
-- type: textarea
+- type: input
   attributes:
-    label: Expected Behavior
-    description: A concise description of what you expected to happen.
+    label: Minecraft Version
+    description: Use this box to tell us your minecraft version.
   validations:
-    required: false
-- type: textarea
+    required: true
+- type: input
   attributes:
-    label: Steps To Reproduce
-    description: Steps to reproduce the behavior.
-    placeholder: |
-      1. In this environment...
-      2. With this config...
-      3. Run '...'
-      4. See error...
+    label: Plugin Version
+    description: Use this box to tell us the version of the plugin your are using "/cui version".
   validations:
-    required: false
-- type: textarea
+    required: true
+- type: input
   attributes:
-    label: Environment
-    description: |
-      examples:
-        - **OS**: Ubuntu 20.04
-        - **Node**: 13.14.0
-        - **npm**: 7.6.3
-    value: |
-        - OS:
-        - Node:
-        - npm:
-    render: markdown
+    label: Server log.
+    description: Upload your your server log to either https://paste.gg or https://gist.github.com, save and then paste the link in this box.
+    placeholder: "Example: https://paste.gg/p/anonymous/109dd6a10a734a3aa430d5a351ea5210"
   validations:
     required: false
 - type: textarea
