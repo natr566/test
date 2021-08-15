@@ -7,7 +7,7 @@ assignees:
 body:
 - type: markdown
   attributes:
-    value: "Starting today, CustomUniverse (free) is a dependency for CustomItems. Your server will automatically shut down if you try to start it up without CustomUniverse installed. This is to prevent any damage that might occur if people unknowingly start their server with CustomItems disabled.
+    value: "CustomUniverse (free) is a dependency for CustomItems. **Your server will automatically shut down if you try to start it up without CustomUniverse installed.** This is to prevent any damage that might occur if people unknowingly start their server with CustomItems disabled.
 
 Download CustomUniverse for free from Polymart from https://polymart.org/r/customuniverse.1220"
 - type: checkboxes
