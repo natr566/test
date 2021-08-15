@@ -1,7 +1,7 @@
 name: 🐞 Feature
 description: Request a new feature / Suggest an idea
 title: "[FEATURE-REQUEST] <title>"
-labels: ""
+labels: ''
 body:
 - type: textarea
   attributes:
